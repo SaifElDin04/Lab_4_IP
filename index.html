@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeTasks | Pro Manager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <span class="material-symbols-rounded icon">task_alt</span>
+            <h2>VibeTasks</h2>
+        </header>
+
+        <div id="form-container" class="form">
+            <input type="text" id="input" placeholder="What needs to be done?" autocomplete="off">
+            <button type="button" id="submit">
+                <span class="material-symbols-rounded">add</span>
+            </button>
+        </div>
+
+        <section class="tools">
+            <div class="filters">
+                <label><input type="radio" name="status" value="every" checked> Every</label>
+                <label><input type="radio" name="status" value="pending"> Pending</label>
+                <label><input type="radio" name="status" value="finished"> Finished</label>
+            </div>
+
+            <select id="sort">
+                <option value="recent">Most Recent</option>
+                <option value="oldest">Oldest First</option>
+                <option value="a-z">Alphabetical (A-Z)</option>
+                <option value="z-a">Alphabetical (Z-A)</option>
+            </select>
+        </section>
+
+        <ul id="list"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
